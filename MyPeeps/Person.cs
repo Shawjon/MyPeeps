@@ -29,8 +29,8 @@ namespace MyPeeps
         #region Methods
         public static void ToList(List<Person> list, Person person)
         {
-            
-            if (person.age >= 18)
+
+            if (Person.AdultYesNo(person.age) == true)
             {
                 list.Add(person);
             }
